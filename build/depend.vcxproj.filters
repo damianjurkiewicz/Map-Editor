@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="fonts">
+      <UniqueIdentifier>{EF84730F-5B99-9BC0-241B-3F2090EE97F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{0098A80F-6CAC-D0C0-352E-7420A101CDF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero">
+      <UniqueIdentifier>{9F8ECA0F-0BA3-F2C0-D424-962040F8EEF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero\minhook">
+      <UniqueIdentifier>{E3D053BD-4F91-CFF3-18CC-1871844B14D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero\minhook\hde">
+      <UniqueIdentifier>{E317E3F2-4F2E-E188-98A5-6CAA04FBB110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="toml">
+      <UniqueIdentifier>{21929E7C-0DC9-9F0D-B6B5-8510A2CB1B0F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\fonts\text.hpp">
+      <Filter>fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui_impl_dx9.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kiero\kiero.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kiero\minhook\MinHook.h">
+      <Filter>kiero\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kiero\minhook\buffer.h">
+      <Filter>kiero\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kiero\minhook\hde\hde32.h">
+      <Filter>kiero\minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kiero\minhook\hde\pstdint.h">
+      <Filter>kiero\minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kiero\minhook\hde\table32.h">
+      <Filter>kiero\minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kiero\minhook\trampoline.h">
+      <Filter>kiero\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\toml\toml.hpp">
+      <Filter>toml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\toml\toml_addon.hpp">
+      <Filter>toml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_impl_dx9.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\kiero\kiero.cpp">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\kiero\minhook\buffer.c">
+      <Filter>kiero\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\kiero\minhook\hde\hde32.c">
+      <Filter>kiero\minhook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\kiero\minhook\hook.c">
+      <Filter>kiero\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\kiero\minhook\trampoline.c">
+      <Filter>kiero\minhook</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

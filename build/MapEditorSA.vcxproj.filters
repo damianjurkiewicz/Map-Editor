@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="utils">
+      <UniqueIdentifier>{169C8510-82B0-ADC1-4B32-5121B705AAF2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\contextmenus.h" />
+    <ClInclude Include="..\src\defines.h" />
+    <ClInclude Include="..\src\editor.h" />
+    <ClInclude Include="..\src\entityinfo.h" />
+    <ClInclude Include="..\src\entitymgr.h" />
+    <ClInclude Include="..\src\filemgr.h" />
+    <ClInclude Include="..\src\interface.h" />
+    <ClInclude Include="..\src\objextendercore.h" />
+    <ClInclude Include="..\src\pch.h" />
+    <ClInclude Include="..\src\popups.h" />
+    <ClInclude Include="..\src\renderer.h" />
+    <ClInclude Include="..\src\tooltips.h" />
+    <ClInclude Include="..\src\utils\d3dhook.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\datastore.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\fontmgr.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\hotkeys.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\log.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\resourcestore.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\updater.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\vkeys.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\widget.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\viewport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\contextmenus.cpp" />
+    <ClCompile Include="..\src\editor.cpp" />
+    <ClCompile Include="..\src\entityinfo.cpp" />
+    <ClCompile Include="..\src\entitymgr.cpp" />
+    <ClCompile Include="..\src\filemgr.cpp" />
+    <ClCompile Include="..\src\interface.cpp" />
+    <ClCompile Include="..\src\pch.cpp" />
+    <ClCompile Include="..\src\popups.cpp" />
+    <ClCompile Include="..\src\renderer.cpp" />
+    <ClCompile Include="..\src\tooltips.cpp" />
+    <ClCompile Include="..\src\utils\d3dhook.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\datastore.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\fontmgr.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\hotkeys.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\log.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\resourcestore.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\updater.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\widget.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\viewport.cpp" />
+  </ItemGroup>
+</Project>

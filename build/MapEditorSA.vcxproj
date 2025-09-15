@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE689C43-4A1E-1539-D312-0F103FC70B3D}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MapEditorSA</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\Win32\Debug\MapEditorSA\</IntDir>
+    <TargetName>MapEditorSA</TargetName>
+    <TargetExt>.asi</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\Win32\Release\MapEditorSA\</IntDir>
+    <TargetName>MapEditorSA</TargetName>
+    <TargetExt>.asi</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;PLUGIN_SGV_10US;GTASA;RW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\plugin-sdk-master\plugin_sa;..\..\plugin-sdk-master\plugin_sa\game_sa;..\..\plugin-sdk-master\plugin_sa\game_sa\rw;..\..\plugin-sdk-master\shared;..\..\plugin-sdk-master\shared\game;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;d3d11.lib;urlmon.lib;plugin_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\plugin-sdk-master\output\lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>bin\MapEditorSA.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;PLUGIN_SGV_10US;GTASA;RW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\plugin-sdk-master\plugin_sa;..\..\plugin-sdk-master\plugin_sa\game_sa;..\..\plugin-sdk-master\plugin_sa\game_sa\rw;..\..\plugin-sdk-master\shared;..\..\plugin-sdk-master\shared\game;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;d3d11.lib;urlmon.lib;plugin.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\plugin-sdk-master\output\lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>bin\MapEditorSA.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\contextmenus.h" />
+    <ClInclude Include="..\src\defines.h" />
+    <ClInclude Include="..\src\editor.h" />
+    <ClInclude Include="..\src\entityinfo.h" />
+    <ClInclude Include="..\src\entitymgr.h" />
+    <ClInclude Include="..\src\filemgr.h" />
+    <ClInclude Include="..\src\interface.h" />
+    <ClInclude Include="..\src\objextendercore.h" />
+    <ClInclude Include="..\src\pch.h" />
+    <ClInclude Include="..\src\popups.h" />
+    <ClInclude Include="..\src\renderer.h" />
+    <ClInclude Include="..\src\tooltips.h" />
+    <ClInclude Include="..\src\utils\d3dhook.h" />
+    <ClInclude Include="..\src\utils\datastore.h" />
+    <ClInclude Include="..\src\utils\fontmgr.h" />
+    <ClInclude Include="..\src\utils\hotkeys.h" />
+    <ClInclude Include="..\src\utils\log.h" />
+    <ClInclude Include="..\src\utils\resourcestore.h" />
+    <ClInclude Include="..\src\utils\updater.h" />
+    <ClInclude Include="..\src\utils\utils.h" />
+    <ClInclude Include="..\src\utils\vkeys.h" />
+    <ClInclude Include="..\src\utils\widget.h" />
+    <ClInclude Include="..\src\viewport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\contextmenus.cpp" />
+    <ClCompile Include="..\src\editor.cpp" />
+    <ClCompile Include="..\src\entityinfo.cpp" />
+    <ClCompile Include="..\src\entitymgr.cpp" />
+    <ClCompile Include="..\src\filemgr.cpp" />
+    <ClCompile Include="..\src\interface.cpp" />
+    <ClCompile Include="..\src\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\popups.cpp" />
+    <ClCompile Include="..\src\renderer.cpp" />
+    <ClCompile Include="..\src\tooltips.cpp" />
+    <ClCompile Include="..\src\utils\d3dhook.cpp" />
+    <ClCompile Include="..\src\utils\datastore.cpp" />
+    <ClCompile Include="..\src\utils\fontmgr.cpp" />
+    <ClCompile Include="..\src\utils\hotkeys.cpp" />
+    <ClCompile Include="..\src\utils\log.cpp" />
+    <ClCompile Include="..\src\utils\resourcestore.cpp" />
+    <ClCompile Include="..\src\utils\updater.cpp" />
+    <ClCompile Include="..\src\utils\utils.cpp" />
+    <ClCompile Include="..\src\utils\widget.cpp" />
+    <ClCompile Include="..\src\viewport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="depend.vcxproj">
+      <Project>{35B585F8-2157-B0CE-0A12-C422F652371F}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
