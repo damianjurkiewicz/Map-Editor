@@ -50,6 +50,18 @@ void InterfaceMgr::Process() {
         DrawSidepanel();
         Tooltip.Draw();
     }
+
+    ImGui::SetNextWindowPos(ImVec2(20, 20), ImGuiCond_Always);
+    ImGui::Begin("StaticText", nullptr,
+        ImGuiWindowFlags_NoDecoration |
+        ImGuiWindowFlags_AlwaysAutoResize |
+        ImGuiWindowFlags_NoMove |
+        ImGuiWindowFlags_NoSavedSettings);
+    ImGui::Text(" ");
+    ImGui::Text(" ");
+    ImGui::Text("a b c d e f g h");
+    ImGui::End();
+
 }
 
 void InterfaceMgr::DrawMainMenuBar() {
